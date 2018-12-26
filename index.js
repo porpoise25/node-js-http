@@ -8,12 +8,12 @@ const server = http.createServer((req,res) => {
         'Content-Type':'text/html;charset=utf-8'
     });
     res.write('\
-        <!DOCTYPE html>\
-        <html lang="ja">\
-        <body>\
-        <h1>HTMLの一番大きい見出しを表示します</h1>\
-        </body>\
-        </html>\
+        &lt;!DOCTYPE html&gt;\
+        &lt;html lang="ja"&gt;\
+        &lt;body&gt;\
+        &lt;h1&gt;HTMLの一番大きい見出しを表示します&lt;/h1&gt;\
+        &lt;/body&gt;\
+        &lt;/html&gt;\
         ');
     res.end();
 })
